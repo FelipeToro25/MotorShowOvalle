@@ -638,3 +638,52 @@ img {
 .hero-logo {
     mix-blend-mode: screen;
 }
+
+/* Sponsors Section */
+.sponsors {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.sponsors-title {
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.sponsors-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .sponsors-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .sponsors-grid a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .sponsors-grid .logo-img {
+        max-width: 100% !important;
+        max-height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .sponsors-grid a:last-child {
+        grid-column: span 2;
+    }
+}
