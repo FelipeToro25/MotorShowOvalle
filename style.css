@@ -238,6 +238,10 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .price-card.featured {
@@ -684,6 +688,7 @@ img {
     }
 
     .sponsors-grid a:last-child {
-        grid-column: span 2;
+        /* grid-column: span 2; Removed to allow side-by-side layout */
+        grid-column: auto;
     }
 }
